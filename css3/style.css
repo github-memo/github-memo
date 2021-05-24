@@ -1,42 +1,25 @@
 /*
-   
-    Template Name : Rolling - Freelancer Portfolio Template
-    Author : UiPasta Team
-    Website : http://www.uipasta.com/
-    Support : http://www.uipasta.com/support/
-	
-	
-*/
-
-
-
-/*
-   
    Table Of Content
    
-   1. Global Style
-   2. Preloader
-   3. Home Section and Navigation Menu
-   4. About Me
-   5. Portfolio
-   6. Testimonial
-   7. Statistics
-   8. Services
-   9. Call to Action
-  10. Contact Us
-  11. Social Icons
-  12. Footer
-  13. Responsive
-  14. Scroll To Top
-  15. Useful Classes ( Such as : Margin, Padding, colors  "This classes will be helpful for you during designing/development time.")
-  16. UiPasta Credit
- 
-
+   1. 전역 스타일(Global Style)
+   2. 로딩 화면(Preloader)
+   3. 홈 부분 및 메뉴 부분(Home Section and Navigation Menu)
+   4. 프로필(About Me)
+   5. 포트폴리오(Portfolio)
+   6. 추천서(Testimonial)
+   7. 통계(Statistics)
+   8. 서비스(Services)
+   9. 연락 요청 전화 또는 이메일(Call to Action)
+  10. 연락 요청 이메일 접수(Contact Us)
+  11. SNS 아이콘(Social Icons)
+  12. 마침(Footer)
+  13. 반응형(Responsive)
+  14. 스크롤(Scroll To Top)
+  15. 유용한 클래스(Useful Classes)
+  16. 크레딧(Credit)
 */
 
-
-
-/* Global Style */
+/* 전역 스타일(Global Style) */
 
 body {
     font-size: 16px;
@@ -53,12 +36,12 @@ body {
 }
 
 ::selection {
-    background-color: #24b662;
+    background-color: #00733f;
     color: #ffffff;
 }
 
 ::-moz-selection {
-    background-color: #24b662;
+    background-color: #00733f;
     color: #ffffff;
 }
 
@@ -79,8 +62,22 @@ img {
     width: 100%;
 }
 
+a:link {
+    color:black;
+    text-decoration:none;
+}
+a:visited {
+    color:purple;
+    text-decoration:none;
+}
+
+a:active {
+    color:red;
+    text-decoration:none;
+}
+
 a:hover {
-    color: #fff;
+    color: white;
     text-decoration: none;
 }
 
@@ -120,7 +117,7 @@ fieldset {
 .section-title h2 {
     margin-top: 0;
     font-weight: 600;
-    border-bottom: 4px double #24b662;
+    border: 4px double #00733f;
 	border-radius: 25px;
     font-size: 30px;
     margin: 0 auto;
@@ -187,15 +184,16 @@ fieldset {
 
 .button-style {
 	border-radius: 50px;
-	border: 3px solid #fff;
+	border: 3px solid black;
 	color: #fff;
+    background-color: white;
 	overflow: hidden;
 }
 
 .button-style:hover,
 .button-style:active,
 .button-style:focus {
-	background: #24b662;
+	background: #00733f;
 	color: #ffffff !important;
 }
 
@@ -224,13 +222,11 @@ fieldset {
 }
 
 .button-style-dark {
-	border: 3px solid #000000 !important;
-	color: #000000;
+	border: 3px solid black !important;
+	color: black;
 }
 
-
-
-/* Preloader */
+/* 로딩 화면(Preloader) */
 
 #preloader {
     position: fixed;
@@ -260,7 +256,7 @@ body.loaded #preloader{
     margin: -75px 0 0 -75px;
     border-radius: 50%;
     border: 3px solid transparent;
-    border-top-color: #24b662;
+    border-top-color: red;
     -webkit-animation: spin 2s linear infinite;
     animation: spin 2s linear infinite;
 }
@@ -274,7 +270,7 @@ body.loaded #preloader{
     bottom: 5px;
     border-radius: 50%;
     border: 3px solid transparent;
-    border-top-color: #24b662;
+    border-top-color: green;
     -webkit-animation: spin 3s linear infinite;
     animation: spin 3s linear infinite;
 }
@@ -288,7 +284,7 @@ body.loaded #preloader{
     bottom: 15px;
     border-radius: 50%;
     border: 3px solid transparent;
-    border-top-color: #24b662;
+    border-top-color: blue;
     -webkit-animation: spin 1.5s linear infinite;
     animation: spin 1.5s linear infinite;
 }
@@ -319,9 +315,7 @@ body.loaded #preloader{
     }
 }
 
-
-
-/* Home Section and Navigation Menu */
+/* 홈 부분 및 메뉴 부분(Home Section and Navigation Menu) */
 
 .home-section {
     height: 100%;
@@ -479,7 +473,7 @@ body.loaded #preloader{
 
 
 
-/* About Me */
+/* 프로필(About Me) */
 
 .about-section {
 	overflow: hidden;
@@ -487,6 +481,8 @@ body.loaded #preloader{
 }
 
 .about-section img {
+    width: 512px;
+    height: 512px;
 	position: absolute;
 }
 
@@ -503,7 +499,7 @@ body.loaded #preloader{
 
 
 
-/* Portfolio */
+/* 포트폴리오(Portfolio) */
 
 .portfolio {}
 
@@ -539,7 +535,7 @@ ul.portfolio li:hover {
 
 ul.portfolio li.active {
     color: #ffffff;
-    background-color: #24b662;
+    background-color: #00733f;
     padding: 5px 20px;
     border-radius: 20px;
     box-shadow: 0px 1px 2px 0px rgba(90, 91, 95, 0.15);
@@ -578,7 +574,7 @@ ul.portfolio li.active {
   opacity: 0;
   left: 0%;
   right: 0%;
-  background-color: #24b662;
+  background-color: #00733f;
   width: 70px;
   height: 70px;
   border-radius: 50%;
@@ -595,7 +591,7 @@ ul.portfolio li.active {
 .mfp-image-holder .mfp-close, .mfp-iframe-holder .mfp-close {
 	margin-top: 40px;
     font-size: 50px;
-    background-color: #24b662;
+    background-color: #00733f;
     width: 44px;
 	right: 0px;
 }
@@ -606,7 +602,7 @@ ul.portfolio li.active {
 
 
 
-/* Testimonial */
+/* 추천서(Testimonial) */
 
 .testimonial-section {
     background: #F9F9F9;
@@ -637,7 +633,7 @@ ul.portfolio li.active {
 .testimonial-word h2 {
     font-size: 12px;
     text-transform: uppercase;
-	color: #24b662;
+	color: #00733f;
     font-weight: 700;
     letter-spacing: 4px;
     margin: 20px 0px;
@@ -648,7 +644,7 @@ ul.portfolio li.active {
 }
 
 .owl-navi {
-	color: #24b662;
+	color: #00733f;
 }
 
 .owl-navi:hover {
@@ -669,19 +665,19 @@ ul.portfolio li.active {
 
 
 
-/* Statistics */
+/* 통계(Statistics) */
 
 .statistics-section {
 	position: relative;
     background: url(https://user-images.githubusercontent.com/80874193/119249017-6a8ab900-bbd0-11eb-947a-eb94a85a894c.jpg);
-    background-size: cover;
+    background-size:cover;
     z-index: 1;
 }
 
 .statistics {
   margin: 25px 0;
   overflow: hidden;
-  color: #ffffff;
+  color: black;
 }
 
 .statistics.block .statistics-icon,
@@ -719,14 +715,14 @@ ul.portfolio li.active {
 
 
 
-/* Services */
+/* 서비스(Services) */
 
 .services-section {
   background-color: #F9F9F9;
 }
 
 .services-section hr {
-  border-bottom: 2px solid #24b662;
+  border-bottom: 2px solid #00733f;
   width: 42px;
   margin-left: 0px;
 }
@@ -755,7 +751,7 @@ ul.portfolio li.active {
 
 
 
-/* Call to Action */
+/* 연락수단 전화 또는 이메일(Call to Action) */
 
 .call-to-action {
 }
@@ -766,7 +762,7 @@ ul.portfolio li.active {
 
 
 
-/* Contact Us */
+/* 연락수단 이메일 접수(Contact Us) */
 
 .contact-us {
 	background-color: #f9f9f9;
@@ -829,19 +825,19 @@ ul.portfolio li.active {
 }
 
 .form-control:focus {
-	border-color: #24b662;
+	border-color: #00733f;
 	border-width: 2px;
 }
 
 .map {
     width: 100%;
     height: 340px;
-    border: 1px solid #24b662;
+    border: 1px solid #00733f;
 }
 
 
 
-/* Social Icons */
+/* SNS 아이콘(Social Icons) */
 
 .social-icon {
   list-style: none;
@@ -949,7 +945,7 @@ ul.portfolio li.active {
 
 
 
-/* Footer */
+/* 마침(Footer) */
 
 .footer-section {
     background: #000;
@@ -967,7 +963,7 @@ ul.portfolio li.active {
 
 
 
-/* Responsive */
+/* 반응형(Responsive) */
 
 @media only screen and (min-width: 767px) and (max-width: 991px) {
     .navigation-menu .navbar-nav li a {
@@ -1021,10 +1017,10 @@ ul.portfolio li.active {
         padding: 11px 15px;
     }
     .navigation-menu .navbar-nav li a:hover {
-        color: #24b662;
+        color: #00733f;
     }
     .navigation-background .navigation-menu .navbar-nav li a:hover {
-        color: #24b662;
+        color: #00733f;
     }
     .navigation-background .navigation-menu .navbar-nav li a {
         padding: 11px 15px;
@@ -1117,10 +1113,10 @@ ul.portfolio li.active {
 
 
 
-/* Scroll To Top */
+/* 스크롤(Scroll To Top) */
 
 .scroll-to-top {
-    background-color: #24b662;
+    background-color: #00733f;
     display: none;
     width: 50px;
     height: 50px;
@@ -1136,14 +1132,13 @@ ul.portfolio li.active {
 
 .scroll-to-top:hover,
 .scroll-to-top:focus {
-    background-color: #1bab58;
+    background-color: #00733f;
     color: #ffffff;
 }
 
 
 
-/* Useful Classes */
-
+/* 유용한 클래스(Useful Classes) */
 
 /* Spacing ( with Margin and Padding ) */
 
@@ -1454,13 +1449,13 @@ ul.portfolio li.active {
 
 
 
-/* UiPasta Credit */
+/* 크레딧(Credit) */
 
 .uipasta-credit {
 }
 
 .uipasta-credit a {
-    color: #24b662;
+    color: #00733f;
     font-weight: 600;
 }
 
