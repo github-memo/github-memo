@@ -1,0 +1,39 @@
+<!doctype html> <!-- hw_11-1_1(postgresSQL_pgTest_badge(alter+select+insert+select(count)+update+delete).html -->
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-sacle=1"/>
+<title>웹 서버 응용 12주차 과제 11-1_1</title>
+<style>
+a:link {color:blue; text-decoration:none;} a:visited { color:purple; text-decoration:none;}
+a:hover { text-decoration:underline;} a:active {color:red; text-decoration:none;}
+</style></head>
+<body>
+<h2>postgresSQL badge (alter, select, insert, select(count), update, delete) 실습</h2>
+<h3>실습 소스 및 결과</h3><br/>
+<h3>alter table 수행(stud_phone)</h3>
+<img src="https://github-memo.github.io/webserver/capture/hw_11-1_1(postgresSQL_pgTest_alter_table_badge(stud_phone)).png"><br/>
+<h3>alter table 내용을 select로 확인</h3>
+<img src="https://github-memo.github.io/webserver/capture/hw_11-1_1(postgresSQL_pgTest_select_from_where_badge(stud_phone))_result.png"><br/>
+<h3>insert into 수행(kdhong)</h3>
+<img src="https://github-memo.github.io/webserver/capture/hw_11-1_1(postgresSQL_pgTest_insert_into_badge(kdhong)).png"><br/>
+<h3>insert into 수행(chsung)</h3>
+<img src="https://github-memo.github.io/webserver/capture/hw_11-1_1(postgresSQL_pgTest_insert_into_badge(chsung)).png"><br/>
+<h3>insert into 내용을 select로 확인</h3>
+<img src="https://github-memo.github.io/webserver/capture/hw_11-1_1(postgresSQL_pgTest_select(all)_from(badge))_result1.png"><br/>
+<h3>insert into 내용을 select로 kdhong 및 chsung의 아이디, 비밀번호 확인</h3>
+<img src="https://github-memo.github.io/webserver/capture/hw_11-1_1(postgresSQL_pgTest_select(id+passwd)_from(badge).png"><br/>
+<h3>insert into 내용을 select로 kdhong의 비밀번호 확인</h3>
+<img src="https://github-memo.github.io/webserver/capture/hw_11-1_1(postgresSQL_pgTest_select(passwd)_from(badge)_where(id_kdhong)).png"><br/>
+<h3>insert into 내용을 select(count)로 id의 개수 확인</h3>
+<img src="https://github-memo.github.io/webserver/capture/hw_11-1_1(postgresSQL_pgTest_select_count(distinct(stud_id))_from(badge)).png"><br/>
+<h3>insert into 내용을 update 하여 kdhong의 passwd를 변경</h3>
+<img src="https://github-memo.github.io/webserver/capture/hw_11-1_1(postgresSQL_pgTest_update(badge)_set(passwd)_where(id_kdhong)).png"><br/>
+<h3>insert into 내용을 update 한 kdhong의 passwd 결과 확인</h3>
+<img src="https://github-memo.github.io/webserver/capture/hw_11-1_1(postgresSQL_pgTest_update_select(passwd)_from(badge)_where(id_kdhong)).png"><br/>
+<h3>insert into 내용을 delete 하여 chsung의 데이터를 제거</h3>
+<img src="https://github-memo.github.io/webserver/capture/hw_11-1_1(postgresSQL_pgTest_delete_from(badge)_where(id_chsung)).png"><br/>
+<h3>delete 수행 후 chsung의 데이터가 제거됨을 확인</h3>
+<img src="https://github-memo.github.io/webserver/capture/hw_11-1_1(postgresSQL_pgTest_select(all)_from(badge))_result2.png"><br/>
+</body>
+</html>
