@@ -1,0 +1,33 @@
+<!DOCTYPE html> <!-- beanFind.html -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="stylesheet" href="../css/sample.css"/>
+<title>건강 검진 도우미 검색</title>
+</head>
+<body>
+<header><h2>건강 검진 도우미 검색</h2></header>
+<nav><ul>
+<li><a href="beanLogout.html">로그아웃</a></li>
+<li><a href="beanFind.html">검색</a></li>
+</ul></nav>
+<section>
+<form action="beanResult.jsp" method="post">
+<fieldset class="fset"><legend>검색</legend>
+<select name="search_select">
+<option value="stud_all" selected>전체</option>
+<option value="stud_name" selected>회원 성명</option>
+<option value="stud_hobby" selected>취미 운동</option>
+</select>
+<input id="find_form" type="text" name="stud_search" size="20" maxlength="50"/>
+<input type="submit" value="검색">
+<a href="beanResult.html"><button>결과 예시</button></a>
+</fieldset>
+</form>
+</section>
+<footer>
+<p>&copy; 20XX Made by Korea. All rights reserved.</p>
+</footer>
+</body>
+</html>
