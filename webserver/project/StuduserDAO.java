@@ -22,8 +22,7 @@ public int insertStuduser (String stud_id, String stud_passwd,
 String stud_name, String stud_phone,String stud_gender,
 String stud_email, String[] sHobby) throws SQLException {
 String sql=
-"insert into studuser (stud_id, stud_passwd, stud_name, stud_phone, stud_gender, stud_email,"
-+ "stud_hobby1, stud_hobby2, stud_hobby3, stud_regdate) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?);";
+"insert into studuser (stud_id, stud_passwd, stud_name, stud_email, stud_phone, stud_gender, stud_hobby1, stud_hobby2, stud_hobby3, stud_regdate) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?);";
 try {
 conn=DriverManager.getConnection(url, user, pass);
 ps=conn.prepareStatement(sql);
@@ -72,8 +71,7 @@ return flag;
 
 public List<StuduserDTO> findAllStuduser(String stud_search) throws SQLException {
 String sql =
-"select * from studuser where stud_id = ? or stud_name = ? or stud_email = ?"
-+ "or stud_phone = ? or stud_gender = ? or stud_hobby1 = ? or stud_hobby2 = ? or stud_hobby3 = ?;";
+"select * from studuser where stud_id = ? or stud_name = ? or stud_email = ? or stud_phone = ? or stud_gender = ? or stud_hobby1 = ? or stud_hobby2 = ? or stud_hobby3 = ?;";
 List<StuduserDTO> list = new ArrayList<StuduserDTO>();
 try {
 conn = DriverManager.getConnection(url, user, pass);
@@ -125,8 +123,11 @@ List<StuduserDTO> list=new ArrayList<StuduserDTO>();
 while (rs.next()) {
 StuduserDTO dto=new StuduserDTO();
 dto.setStud_id(rs.getString("stud_id"));
+dto.setStud_name(rs.getString("stud_name"));
+dto.setStud_gender(rs.getString("stud_gender"));
 dto.setStud_phone(rs.getString("stud_phone"));
 dto.setStud_email(rs.getString("stud_email"));
+dto.setStud_regdate(rs.getString("stud_regdate"));
 String shobby[]={"", "", ""};
 shobby[0]=rs.getString("stud_hobby1");
 shobby[1]=rs.getString("stud_hobby2");
